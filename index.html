@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language A1 Exam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .container h2 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question label {
+            display: block;
+            font-weight: bold;
+        }
+        .question textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+        .multiple-choice {
+            margin-top: 10px;
+        }
+        .multiple-choice label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Language A1 Exam</h2>
+    <form id="examForm">
+        <!-- Original questions -->
+        <div class="question">
+            <label for="q1">1. How can you introduce yourself in a formal and informal situation?</label>
+            <textarea id="q1" required></textarea>
+        </div>
+
+        <div class="question">
+            <label for="q2">2. What is the difference between formal and informal greetings in certain situations?</label>
+            <textarea id="q2" required></textarea>
+        </div>
+
+        <div class="question">
+            <label for="q3">3. How would you describe your country to someone who has never heard of it?</label>
+            <textarea id="q3" required></textarea>
+        </div>
+
+        <!-- 20 Multiple Choice Questions -->
+        <div class="question">
+            <label>4. Which of the following is NOT a typical greeting in English?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q4" value="a" required> a) Hello</label>
+                <label><input type="radio" name="q4" value="b" required> b) Hi there</label>
+                <label><input type="radio" name="q4" value="c" required> c) Good day</label>
+                <label><input type="radio" name="q4" value="d" required> d) Farewell</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>5. What is the correct way to ask for someone's name?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q5" value="a" required> a) How do you call yourself?</label>
+                <label><input type="radio" name="q5" value="b" required> b) What is your name?</label>
+                <label><input type="radio" name="q5" value="c" required> c) Who are you named?</label>
+                <label><input type="radio" name="q5" value="d" required> d) How is your name?</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>6. Which of the following words means "hello" in English?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q6" value="a" required> a) Goodbye</label>
+                <label><input type="radio" name="q6" value="b" required> b) Hello</label>
+                <label><input type="radio" name="q6" value="c" required> c) Thanks</label>
+                <label><input type="radio" name="q6" value="d" required> d) Sorry</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>7. What is the correct pronoun for the third person singular?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q7" value="a" required> a) I</label>
+                <label><input type="radio" name="q7" value="b" required> b) You</label>
+                <label><input type="radio" name="q7" value="c" required> c) He/She/It</label>
+                <label><input type="radio" name="q7" value="d" required> d) We</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>8. Which of the following words is an adjective?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q8" value="a" required> a) Run</label>
+                <label><input type="radio" name="q8" value="b" required> b) Happy</label>
+                <label><input type="radio" name="q8" value="c" required> c) Quickly</label>
+                <label><input type="radio" name="q8" value="d" required> d) Table</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>9. What is the auxiliary verb used in the question "Are you a student?"</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q9" value="a" required> a) Do</label>
+                <label><input type="radio" name="q9" value="b" required> b) Are</label>
+                <label><input type="radio" name="q9" value="c" required> c) Is</label>
+                <label><input type="radio" name="q9" value="d" required> d) Have</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>10. Which of the following words is an irregular plural noun?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q10" value="a" required> a) Dogs</label>
+                <label><input type="radio" name="q10" value="b" required> b) Children</label>
+                <label><input type="radio" name="q10" value="c" required> c) Books</label>
+                <label><input type="radio" name="q10" value="d" required> d) Pens</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>11. What is the correct verb tense in the sentence: "She _____ to school every day."</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q11" value="a" required> a) go</label>
+                <label><input type="radio" name="q11" value="b" required> b) goes</label>
+                <label><input type="radio" name="q11" value="c" required> c) going</label>
+                <label><input type="radio" name="q11" value="d" required> d) went</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>12. Which of the following words is a preposition?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q12" value="a" required> a) Quickly</label>
+                <label><input type="radio" name="q12" value="b" required> b) Under</label>
+                <label><input type="radio" name="q12" value="c" required> c) Beautiful</label>
+                <label><input type="radio" name="q12" value="d" required> d) Sing</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>13. What is the correct meaning of the word "Please" in English?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q13" value="a" required> a) Thank you</label>
+                <label><input type="radio" name="q13" value="b" required> b) Excuse me</label>
+                <label><input type="radio" name="q13" value="c" required> c) You're welcome</label>
+                <label><input type="radio" name="q13" value="d" required> d) If you don't mind</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>14. Which of the following sentences is grammatically correct?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q14" value="a" required> a) He don't like apples.</label>
+                <label><input type="radio" name="q14" value="b" required> b) She doesn't likes apples.</label>
+                <label><input type="radio" name="q14" value="c" required> c) They doesn't like apples.</label>
+                <label><input type="radio" name="q14" value="d" required> d) She doesn't like apples.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>15. What is the correct plural form of "Child"?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q15" value="a" required> a) Childs</label>
+                <label><input type="radio" name="q15" value="b" required> b) Childen</label>
+                <label><input type="radio" name="q15" value="c" required> c) Children</label>
+                <label><input type="radio" name="q15" value="d" required> d) Childes</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>16. Which of the following words is a possessive pronoun?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q16" value="a" required> a) I</label>
+                <label><input type="radio" name="q16" value="b" required> b) Me</label>
+                <label><input type="radio" name="q16" value="c" required> c) My</label>
+                <label><input type="radio" name="q16" value="d" required> d) Mine</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>17. What is the opposite verb of "Open"?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q17" value="a" required> a) Start</label>
+                <label><input type="radio" name="q17" value="b" required> b) Close</label>
+                <label><input type="radio" name="q17" value="c" required> c) Begin</label>
+                <label><input type="radio" name="q17" value="d" required> d) End</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>18. Which of the following words expresses time?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q18" value="a" required> a) Apple</label>
+                <label><input type="radio" name="q18" value="b" required> b) Book</label>
+                <label><input type="radio" name="q18" value="c" required> c) Yesterday</label>
+                <label><input type="radio" name="q18" value="d" required> d) Blue</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>19. What is the correct word order in an English sentence?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q19" value="a" required> a) Verb - Subject - Object</label>
+                <label><input type="radio" name="q19" value="b" required> b) Object - Subject - Verb</label>
+                <label><input type="radio" name="q19" value="c" required> c) Subject - Verb - Object</label>
+                <label><input type="radio" name="q19" value="d" required> d) Object - Verb - Subject</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>20. Which of the following words is an article?</label>
+            <div class="multiple-choice">
+                <label><input type="radio" name="q20" value="a" required> a) An</label>
+                <label><input type="radio" name="q20" value="b" required> b) Is</label>
+                <label><input type="radio" name="q20" value="c" required> c) At</label>
+                <label><input type="radio" name="q20" value="d" required> d) On</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn" onclick="submitExam()">Submit Exam</button>
+    </form>
+
+    <div id="result" class="result" style="display: none;"></div>
+</div>
+
+<script>
+
+    
+    function submitExam() {
+        // Collect answers
+        const q1 = document.getElementById('q1').value;
+        const q2 = document.getElementById('q2').value;
+        const q3 = document.getElementById('q3').value;
+        
+        let multipleChoiceAnswers = {};
+        for (let i = 4; i <= 23; i++) {
+            const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+            if (selectedOption) {
+                multipleChoiceAnswers[`q${i}`] = selectedOption.value;
+            }
+        }
+
+        // Validate that all fields are filled
+        if (!q1 || !q2 || !q3 || Object.keys(multipleChoiceAnswers).length !== 20) {
+            alert("Please answer all questions before submitting.");
+            return;
+        }
+
+        // Display results
+        let resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+        let resultHTML = `
+            <h4>Your Answers:</h4>
+            <p><strong>1. Introduction:</strong> ${q1}</p>
+            <p><strong>2. Greetings:</strong> ${q2}</p>
+            <p><strong>3. Country Description:</strong> ${q3}</p>
+        `;
+    }
+
+    // List of correct answers
+    const correctAnswers = {
+        q4: 'd',
+        q5: 'b',
+        q6: 'b',
+        q7: 'c',
+        q8: 'b',
+        q9: 'b',
+        q10: 'b',
+        q11: 'b',
+        q12: 'b',
+        q13: 'd',
+        q14: 'd',
+        q15: 'c',
+        q16: 'd',
+        q17: 'b',
+        q18: 'c',
+        q19: 'c',
+        q20: 'a'
+    };
+
+    function submitExam() {
+        // Collect answers from the text areas
+        const q1 = document.getElementById('q1').value;
+        const q2 = document.getElementById('q2').value;
+        const q3 = document.getElementById('q3').value;
+
+        // Collect multiple-choice answers
+        let multipleChoiceAnswers = {};
+        let correctCount = 0;
+
+        for (let i = 4; i <= 20; i++) {
+            const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+            if (selectedOption) {
+                const userAnswer = selectedOption.value;
+                multipleChoiceAnswers[`q${i}`] = userAnswer;
+
+                // Check if the answer is correct
+                if (correctAnswers[`q${i}`] === userAnswer) {
+                    correctCount++; // Increment if the answer is correct
+                }
+            }
+        }
+
+        // Validate that all fields are filled
+        if (!q1 || !q2 || !q3 || Object.keys(multipleChoiceAnswers).length !== 17) { // We expect 17 multiple-choice answers
+            alert("Please answer all questions before submitting.");
+            return;
+        }
+
+        // Display results
+        let resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+
+        // Text area results
+        let resultHTML = `
+            <h4>Your Answers:</h4>
+            <p><strong>1. Introduction:</strong> ${q1}</p>
+            <p><strong>2. Greetings:</strong> ${q2}</p>
+            <p><strong>3. Country Description:</strong> ${q3}</p>
+        `;
+
+        // Multiple-choice results with feedback on correctness
+        for (let i = 4; i <= 20; i++) {
+            const isCorrect = correctAnswers[`q${i}`] === multipleChoiceAnswers[`q${i}`] ? 'Correct' : 'Incorrect';
+            resultHTML += `<p><strong>${i}. Your Answer:</strong> ${multipleChoiceAnswers[`q${i}`]} - <strong>${isCorrect}</strong></p>`;
+        }
+
+        // Display total score
+        resultHTML += `<h4>Total Correct: ${correctCount} out of 17</h4>`;
+
+        resultDiv.innerHTML = resultHTML;
+    }
+
+
+    function submitExam() {
+        // Collect answers from the text areas
+        const q1 = document.getElementById('q1').value;
+        const q2 = document.getElementById('q2').value;
+        const q3 = document.getElementById('q3').value;
+
+        // Check if text area answers have at least 100 characters
+        if (q1.length < 100) {
+            alert("Answer for Question 1 must be at least 100 characters.");
+            return;
+        }
+        if (q2.length < 100) {
+            alert("Answer for Question 2 must be at least 100 characters.");
+            return;
+        }
+        if (q3.length < 100) {
+            alert("Answer for Question 3 must be at least 100 characters.");
+            return;
+        }
+
+        // Collect multiple-choice answers
+        let multipleChoiceAnswers = {};
+        let correctCount = 0;
+
+        for (let i = 4; i <= 20; i++) {
+            const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+            if (selectedOption) {
+                const userAnswer = selectedOption.value;
+                multipleChoiceAnswers[`q${i}`] = userAnswer;
+
+                // Check if the answer is correct
+                if (correctAnswers[`q${i}`] === userAnswer) {
+                    correctCount++; // Increment if the answer is correct
+                }
+            }
+        }
+
+        // Validate that all fields are filled
+        if (Object.keys(multipleChoiceAnswers).length !== 17) { // We expect 17 multiple-choice answers
+            alert("Please answer all questions before submitting.");
+            return;
+        }
+
+        // Display results
+        let resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+
+        // Text area results
+        let resultHTML = `
+            <h4>Your Answers:</h4>
+            <p><strong>1. Introduction:</strong> ${q1}</p>
+            <p><strong>2. Greetings:</strong> ${q2}</p>
+            <p><strong>3. Country Description:</strong> ${q3}</p>
+        `;
+
+        // Multiple-choice results with feedback on correctness
+        for (let i = 4; i <= 20; i++) {
+            const isCorrect = correctAnswers[`q${i}`] === multipleChoiceAnswers[`q${i}`] ? 'Correct' : 'Incorrect';
+            resultHTML += `<p><strong>${i}. Your Answer:</strong> ${multipleChoiceAnswers[`q${i}`]} - <strong>${isCorrect}</strong></p>`;
+        }
+
+        // Display total score
+        resultHTML += `<h4>Total Correct: ${correctCount} out of 17</h4>`;
+
+        resultDiv.innerHTML = resultHTML;
+    }
+
+
+</script>
